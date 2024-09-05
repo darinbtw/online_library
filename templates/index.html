@@ -3,16 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
-    <link rel="stylesheet" href="templates/styles.css"> <!-- если файл в папке templates -->
-
+    <title>test</title>
+    <style>
+        .navbar{
+            background:#F97300;
+           }
+           .nav-link , .navbar-brand{
+            color: #f4f4f4;
+            cursor: pointer;
+           }
+           .nav-link{
+            margin-right: 1em !important;
+           }
+           .nav-link:hover{
+            background: #f4f4f4;
+            color: #f97300;
+           }
+           .navbar-collapse{
+            justify-content: flex-end;
+           }
+           .navbar-toggler{
+             background:#fff !important;
+           }
+    </style>
 </head>
 <body>
-    <div class="main">
-        <h1>Добро пожаловать на наш сайт!</h1>
-    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-band" href="#">Онлайн магазин</a>
+            <button class='navbar-toggler' type='button' >
+                <span class='navbar-toggler-icon'></span>
+            </button>
+        <div class='collapse navbar-collapse'>
+            <ul class='navbar-nav mr-4'>
+                <li class='nav-item'>
+                    <a class='nav-link' href='https://dzen.ru/?yredirect=true&clid=2261452&win=514' target='_blank'>Пример</a>
+                </li>
+            </ul>
+        </div>
+
+        </nav>
+    </header>
+    
 </body>
-<footer>
-    <h1>Страница с электроннами книгами!</h1>
-</footer>
 </html>
