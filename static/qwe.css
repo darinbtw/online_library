@@ -1,20 +1,14 @@
-.navbar{
-    background:#CCFFCC;
-   }
-   .nav-link , .navbar-brand{
-    color: #000000;
-    cursor: pointer;
-   }
-   .nav-link{
-    margin-right: 1em !important;
-   }
-   .nav-link:hover{
-    background: #000000;
-    color: #f97300;
-   }
-   .navbar-collapse{
-    justify-content: flex-end;
-   }
-   .navbar-toggler{
-     background:#fff !important;
-   }
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header{
+  text-align: center;
+  color: darkcyan;
+  border: 1px solid black;
+  background-color: lightgreen;
+  margin-top: -8px;
+  justify-content: space-between;
+}
