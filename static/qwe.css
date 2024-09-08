@@ -12,3 +12,30 @@ header{
   margin-top: -8px;
   justify-content: space-between;
 }
+
+.about{
+  border-radius: 8px;
+  background-color: lightgreen;
+  margin: 40px;
+  padding: 20px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.cataloge{
+  border-radius: 8px;
+  background-color: lightgreen;
+  margin: 40px;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+footer{
+  background-color: lightgreen;
+  padding: 13px;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin-top: 270px;
+  border: 1px solid black;
+}
