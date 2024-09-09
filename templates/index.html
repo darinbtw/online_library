@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Онайлн библиотека</title>
+  <title>{% block start %}Онайлн библиотека{%endblock %}</title>
   <link rel="stylesheet" href="static/qwe.css">
 </head>
 <body>
+  {%block contents%}
   <header>
     <h1>Добро пожаловать на наш сайт</h1>
   </header>
@@ -14,13 +15,12 @@
     <h2> О нас</h2>
     <p>На нашем сайте вы можете бесплатно читать любимые ваши книги</p>
   </section>
-
   <section class="cataloge">
     <h2>Каталог книг:</h2>
     <img src='../static/images/romeo.jpg' alt='romeo'>
-    <a class='button-read' href=''>Читать</a>
+    <a class='button-read' href='/romeo' target='_blank'>Читать</a>
   </section>
-
+  {%endblock%}
   <footer>
     Онлайн библиотека.ru 2024
   </footer>
