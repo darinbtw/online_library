@@ -4,6 +4,19 @@ html, body {
   width: 100%;
 }
 
+img{
+  width: 160px;
+}
+
+button{
+  display: block;
+  border-radius: 5px;
+  color: black;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 45px;
+}
+
 header{
   text-align: center;
   color: darkcyan;
