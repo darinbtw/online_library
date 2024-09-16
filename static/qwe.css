@@ -21,21 +21,6 @@ h3{
   border: 2px solid black;
 }
 
-.back{
-  width: 300px;
-}
-
-a{
-  display: block;
-  border-radius: 5px;
-  color: black;
-  margin-top: 10px;
-  cursor: pointer;
-  margin-left: 45px;
-  border: 2px solid black;
-  width: 49px;
-  background-color: rgb(255, 255, 255);
-}
 
 header{
   text-align: center;
