@@ -6,17 +6,24 @@
   <title>{% block start %}Онайлн библиотека{%endblock %}</title>
   <link rel="stylesheet" href="static/qwe.css">
   <style>
-    a{
-  display: block;
-  border-radius: 5px;
-  color: black;
-  margin-top: 10px;
-  cursor: pointer;
-  margin-left: 45px;
-  border: 2px solid black;
-  width: 49px;
-  background-color: rgb(255, 255, 255);
-}
+    a {
+      display: block;
+      border-radius: 5px;
+      color: black;
+      margin-top: 10px;
+      cursor: pointer;
+      border: 2px solid black;
+      width: auto;
+      padding: 5px 10px;
+      background-color: white;
+      text-align: center;
+    }
+
+    .in_row {
+      display: flex; /* Включаем flexbox для выравнивания книг по горизонтали */
+      gap: 20px; /* Промежуток между книгами */
+    }
+
   </style>
 </head>
 <body>
@@ -29,11 +36,21 @@
   </header>
   <section class="cataloge">
     <h2>Каталог книг:</h2>
-    <h3>Ромео и Джульетта.</h3>
-    <img src='../static/images/romeo.jpg' alt='romeo'>
-    <a class='button-read' href='/romeo' target='_blank'>Читать</a>
-    
-    
+    <div class='in_row'>
+      <div> 
+        <h3>Ромео и Джульетта.</h3>
+        <h4>Автор</h4>
+        <img src='../static/images/romeo.jpg' alt='romeo'>
+        <a class='button-read' href='/romeo' target='_blank'>Читать</a>
+      </div>
+    <div class='in_row'>
+      <div>
+        <h3>Отцы и дети</h3>
+        <h4>Автор: И.С Тургенеев</h4>
+        <img src='../static/images/sinok.png' alt='otsi_i_deti'>
+        <a class='button-read' href='/sinok' target='_blank'>Читать</a>
+      </div>
+    </div>
   </section>
   {%endblock%}
   <footer>
