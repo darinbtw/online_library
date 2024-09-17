@@ -9,8 +9,11 @@
     padding: 10px;
     border: none;
     cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--background-color);
   }
   
 body{
-    color: black
+    color: black;
+    background-color: white;
 }
