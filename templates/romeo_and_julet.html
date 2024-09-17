@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ромео и Джульетта - Чтение книги</title>
+    <link id="theme-style" rel="stylesheet" href="static/light-theme.css">
     <style>
         body {
             font-family: 'Arial', serif;
-            background-color: #f3f3f3;
             margin: 0;
             padding: 0;
         }
@@ -15,8 +15,6 @@
         .container {
             max-width: 800px;
             margin: 50px auto;
-            background-color: white;
-            
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             text-align: center;
             white-space: pre-wrap; /* Сохраняет пробелы и переносы строк из текста */
@@ -42,11 +40,10 @@
             color: white;
             margin-top: 40px;
         }
-
-
     </style>
 </head>
 <body>
+    <button id="theme-toggle">Сменить тему</button>
     <div class="back-button">
         <a href="/">Вернуться на главную страницу</a>
     </div>
@@ -5332,5 +5329,6 @@
     <footer>
         Онлайн библиотека.ru 2024
     </footer>
+    <script src="../static/js_codes/changes_theme.js"></script>
 </body>
 </html>

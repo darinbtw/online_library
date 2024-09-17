@@ -20,14 +20,18 @@
     }
 
     .in_row {
-      display: flex; /* Включаем flexbox для выравнивания книг по горизонтали */
+      display: flex;
+      flex-wrap: wrap; /* Позволяет книгам переноситься на новую строку */
       gap: 20px; /* Промежуток между книгами */
+      justify-content: center; /* Выравнивание книг по центру */
     }
 
   </style>
 </head>
 <body>
   {%block contents%}
+  <link id="theme-style" rel="stylesheet" href="static/light-theme.css">
+  <button id="theme-toggle">Сменить тему</button>
   <header>
     <h1>Добро пожаловать на наш сайт</h1>
     <section class="about">
@@ -39,7 +43,7 @@
     <div class='in_row'>
       <div> 
         <h3>Ромео и Джульетта.</h3>
-        <h4>Автор</h4>
+        <h4>Автор: Уильям Шекспир</h4>
         <img src='../static/images/romeo.jpg' alt='romeo'>
         <a class='button-read' href='/romeo' target='_blank'>Читать</a>
       </div>
@@ -51,11 +55,72 @@
         <a class='button-read' href='/sinok' target='_blank'>Читать</a>
       </div>
     </div>
+    <div class='in_row'>
+      <div> 
+        <h3>Ромео и Джульетта.</h3>
+        <h4>Автор: Уильям Шекспир</h4>
+        <img src='../static/images/romeo.jpg' alt='romeo'>
+        <a class='button-read' href='/romeo' target='_blank'>Читать</a>
+      </div>
+    <div class='in_row'>
+      <div>
+        <h3>Отцы и дети</h3>
+        <h4>Автор: И.С Тургенеев</h4>
+        <img src='../static/images/sinok.png' alt='otsi_i_deti'>
+        <a class='button-read' href='/sinok' target='_blank'>Читать</a>
+      </div>
+    </div>
+    <div class='in_row'>
+      <div> 
+        <h3>Ромео и Джульетта.</h3>
+        <h4>Автор: Уильям Шекспир</h4>
+        <img src='../static/images/romeo.jpg' alt='romeo'>
+        <a class='button-read' href='/romeo' target='_blank'>Читать</a>
+      </div>
+    <div class='in_row'>
+      <div>
+        <h3>Отцы и дети</h3>
+        <h4>Автор: И.С Тургенеев</h4>
+        <img src='../static/images/sinok.png' alt='otsi_i_deti'>
+        <a class='button-read' href='/sinok' target='_blank'>Читать</a>
+      </div>
+    </div>
+    <div class='in_row'>
+      <div> 
+        <h3>Ромео и Джульетта.</h3>
+        <h4>Автор: Уильям Шекспир</h4>
+        <img src='../static/images/romeo.jpg' alt='romeo'>
+        <a class='button-read' href='/romeo' target='_blank'>Читать</a>
+      </div>
+    <div class='in_row'>
+      <div>
+        <h3>Отцы и дети</h3>
+        <h4>Автор: И.С Тургенеев</h4>
+        <img src='../static/images/sinok.png' alt='otsi_i_deti'>
+        <a class='button-read' href='/sinok' target='_blank'>Читать</a>
+      </div>
+    </div>
+    <div class='in_row'>
+      <div> 
+        <h3>Ромео и Джульетта.</h3>
+        <h4>Автор: Уильям Шекспир</h4>
+        <img src='../static/images/romeo.jpg' alt='romeo'>
+        <a class='button-read' href='/romeo' target='_blank'>Читать</a>
+      </div>
+    <div class='in_row'>
+      <div>
+        <h3>Отцы и дети</h3>
+        <h4>Автор: И.С Тургенеев</h4>
+        <img src='../static/images/sinok.png' alt='otsi_i_deti'>
+        <a class='button-read' href='/sinok' target='_blank'>Читать</a>
+      </div>
+    </div>
+    
   </section>
   {%endblock%}
   <footer>
     Онлайн библиотека.ru 2024
   </footer>
-
+  <script src="../static/js_codes/changes_theme.js"></script>
 </body>
 </html>

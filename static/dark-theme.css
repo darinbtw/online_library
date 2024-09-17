@@ -1,0 +1,16 @@
+.book-content {
+    background-color: rgb(44, 44, 44);
+    color: white;
+  }
+  
+  button {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+body{
+    background-color:rgb(44, 44, 44) ;
+}
