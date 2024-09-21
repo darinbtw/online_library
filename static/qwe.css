@@ -53,6 +53,7 @@ header{
 }
 
 .cataloge{
+  overflow-y: auto;
   border-radius: 8px;
   background-color: #008080;
   margin: 40px;

@@ -12,7 +12,7 @@
       margin-top: 10px;
       cursor: pointer;
       border: 2px solid black;
-      width: auto;
+      width: 100%;
       padding: 5px 10px;
       background-color: white;
       text-align: center;
@@ -22,21 +22,23 @@
       display: flex;
       flex-wrap: wrap; /* Позволяет книгам переноситься на новую строку */
       gap: 20px; /* Промежуток между книгами */
-      justify-content: center; /* Выравнивание книг по центру */
     }
-
   </style>
 </head>
 <body>
   {%block contents%}
   <link id="theme-style" rel="stylesheet" href="static/light-theme.css">
   <header>
-    <button id="theme-toggle" class="changes_theme">Сменить тему</button>
     <h1>Добро пожаловать на наш сайт</h1>
     <section class="about">
       <p>На нашем сайте вы можете бесплатно читать любимые ваши книги</p>
     </section>
   </header>
+  <form method='get' action="/search">
+    <input type="text" name="q" placeholder="Поиск книг" required>
+    <button type="submit">Найти</button>
+  </form>
+  <button id="theme-toggle" class="changes_theme">Сменить тему</button>
   <section class="cataloge">
     <h2>Каталог книг:</h2>
     <div class='in_row'>
