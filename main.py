@@ -43,6 +43,5 @@ def romep():
 @app.route('/sinok')
 def sinok():
     return render_template('sinok.html')
-
 if __name__ == "__main__":
     app.run(debug=True)
