@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% block start %}Онайлн библиотека{%endblock %}</title>
+  <title>{% block start %}Онлайн библиотека{%endblock %}</title>
   <link rel="stylesheet" href="static/qwe.css">
   <style>
     a {
@@ -12,13 +12,14 @@
       margin-top: 10px;
       cursor: pointer;
       border: 2px solid black;
-      width: 100%;
+      width: 80%;
       padding: 5px 10px;
       background-color: white;
       text-align: center;
     }
 
     .in_row {
+      border: 2px solid black;
       display: flex;
       flex-wrap: wrap; /* Позволяет книгам переноситься на новую строку */
       gap: 20px; /* Промежуток между книгами */
@@ -41,6 +42,7 @@
   <button id="theme-toggle" class="changes_theme">Сменить тему</button>
   <section class="cataloge">
     <h2>Каталог книг:</h2>
+    <h2>Отечественная литература</h2>
     <div class='in_row'>
       <div> 
         <h3>Ромео и Джульетта.</h3>
@@ -48,74 +50,22 @@
         <img src='../static/images/romeo.jpg' alt='romeo'>
         <a class='button-read' href='/romeo' target='_blank'>Читать</a>
       </div>
-    <div class='in_row'>
+    </div>
+  <h2>Иностранная литература</h2>
+  <div class='in_row1'>
       <div>
         <h3>Отцы и дети</h3>
         <h4>Автор: И.С Тургенеев</h4>
         <img src='../static/images/sinok.png' alt='otsi_i_deti'>
         <a class='button-read' href='/sinok' target='_blank'>Читать</a>
-      </div>
-    </div>
-    <div class='in_row'>
-      <div> 
-        <h3>Ромео и Джульетта.</h3>
-        <h4>Автор: Уильям Шекспир</h4>
-        <img src='../static/images/romeo.jpg' alt='romeo'>
-        <a class='button-read' href='/romeo' target='_blank'>Читать</a>
-      </div>
-    <div class='in_row'>
-      <div>
-        <h3>Отцы и дети</h3>
-        <h4>Автор: И.С Тургенеев</h4>
-        <img src='../static/images/sinok.png' alt='otsi_i_deti'>
-        <a class='button-read' href='/sinok' target='_blank'>Читать</a>
-      </div>
-    </div>
-    <div class='in_row'>
-      <div> 
-        <h3>Ромео и Джульетта.</h3>
-        <h4>Автор: Уильям Шекспир</h4>
-        <img src='../static/images/romeo.jpg' alt='romeo'>
-        <a class='button-read' href='/romeo' target='_blank'>Читать</a>
-      </div>
-    <div class='in_row'>
-      <div>
-        <h3>Отцы и дети</h3>
-        <h4>Автор: И.С Тургенеев</h4>
-        <img src='../static/images/sinok.png' alt='otsi_i_deti'>
-        <a class='button-read' href='/sinok' target='_blank'>Читать</a>
-      </div>
-    </div>
-    <div class='in_row'>
-      <div> 
-        <h3>Ромео и Джульетта.</h3>
-        <h4>Автор: Уильям Шекспир</h4>
-        <img src='../static/images/romeo.jpg' alt='romeo'>
-        <a class='button-read' href='/romeo' target='_blank'>Читать</a>
-      </div>
-    <div class='in_row'>
-      <div>
-        <h3>Отцы и дети</h3>
-        <h4>Автор: И.С Тургенеев</h4>
-        <img src='../static/images/sinok.png' alt='otsi_i_deti'>
-        <a class='button-read' href='/sinok' target='_blank'>Читать</a>
-      </div>
-    </div>
-    <div class='in_row'>
-      <div> 
-        <h3>Ромео и Джульетта.</h3>
-        <h4>Автор: Уильям Шекспир</h4>
-        <img src='../static/images/romeo.jpg' alt='romeo'>
-        <a class='button-read' href='/romeo' target='_blank'>Читать</a>
-      </div>
-    <div class='in_row'>
-      <div>
-        <h3>Отцы и дети</h3>
-        <h4>Автор: И.С Тургенеев</h4>
-        <img src='../static/images/sinok.png' alt='otsi_i_deti'>
-        <a class='button-read' href='/sinok' target='_blank'>Читать</a>
-      </div>
-    </div>
+  </div>
+  <div class=''>
+    <div>
+      <h3>Отцы и дети</h3>
+      <h4>Автор: И.С Тургенеев</h4>
+      <img src='../static/images/sinok.png' alt='otsi_i_deti'>
+      <a class='button-read' href='/sinok' target='_blank'>Читать</a>
+</div>
     
   </section>
   {%endblock%}
