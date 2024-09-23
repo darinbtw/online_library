@@ -28,14 +28,6 @@ img{
   display: block;
 }
 
-.in_row1 {
-  border: 2px solid black;
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap; /* Позволяет книгам переноситься на новую строку */
-  gap: 20px; /* Промежуток между книгами */
-}
-
 h3{
   text-decoration: underline;
 }
@@ -68,7 +60,7 @@ header{
 }
 
 .cataloge{
-  overflow-y: auto;
+  overflow-x: auto;
   border-radius: 8px;
   background-color: #008080;
   margin: 40px;
