@@ -47,5 +47,18 @@ def sinok():
 @app.route('/three_musketera')
 def three_musketera():
     return render_template('tri_musketera.html')
+
+@app.route('/Sherlock')
+def sherlock():
+    return render_template('sherlock.html')
+
+@app.route('/Na_zapade')
+def Na_zapade():
+    return render_template('Na_zapade.html')
+
+@app.route('/Triumfalnaya')
+def Triumfalnaya():
+    return render_template('Triumfalnaya.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
