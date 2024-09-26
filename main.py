@@ -43,5 +43,9 @@ def romep():
 @app.route('/sinok')
 def sinok():
     return render_template('sinok.html')
+
+@app.route('/three_musketera')
+def three_musketera():
+    return render_template('tri_musketera.html')
 if __name__ == "__main__":
     app.run(debug=True)
