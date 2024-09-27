@@ -60,5 +60,13 @@ def Na_zapade():
 def Triumfalnaya():
     return render_template('Triumfalnaya.html')
 
+@app.route('/dubroski')
+def dubroski():
+    return render_template('dubroski.html')
+
+@app.route('/mertvye')
+def mertvye():
+    return render_template('mertvye.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
