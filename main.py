@@ -40,10 +40,6 @@ def search():
 def romep():
     return render_template('romeo_and_julet.html')
 
-@app.route('/sinok')
-def sinok():
-    return render_template('sinok.html')
-
 @app.route('/three_musketera')
 def three_musketera():
     return render_template('tri_musketera.html')
@@ -51,6 +47,10 @@ def three_musketera():
 @app.route('/Sherlock')
 def sherlock():
     return render_template('sherlock.html')
+
+@app.route('/sinok')
+def sinok():
+    return render_template('sinok.html')
 
 @app.route('/Na_zapade')
 def Na_zapade():
