@@ -68,5 +68,9 @@ def dubroski():
 def mertvye():
     return render_template('mertvye.html')
 
+@app.route('/all_books')
+def all_books():
+    return render_template('all_books.html')
+
 if __name__ == "__main__":
     app.run(debug=True)

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block start %}Онлайн библиотека - Все книги{%endblock %}</title>
+  <link rel="stylesheet" href="static/qwe.css">
+  <style>
+    a {
+      display: block;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+      border: 2px solid black;
+      width: 80%;
+      padding: 5px 10px;
+      background-color: white;
+      text-align: center;
+    }
+
+    .in_row {
+
+      display: flex;
+      flex-wrap: nowrap; /* Книги будут в одной линии */
+      gap: 20px; /* Промежуток между книгами */
+      overflow-x: auto; /* Позволяет прокручивать, если книги не помещаются в одну линию */
+    }
+  </style>
+</head>
+<body>
+  <link id="theme-style" rel="stylesheet" href="static/light-theme.css">
+  <header>
+    <h1>Все доступные книги</h1>
+    <section class="about">
+      <p>На ваш вкус и цвет</p>
+    </section>
+  </header>
+  <form method='get' action="/search">
+    <input type="text" name="q" placeholder="Поиск книг" required>
+    <button type="submit">Найти</button>
+  </form>
+  <button id="theme-toggle" class="changes_theme">Сменить тему</button>
+
+  <footer>
+    Онлайн библиотека.ru 2024
+  </footer>
+  <script src="../static/js_codes/changes_theme.js"></script>
+</body>
+</html>
